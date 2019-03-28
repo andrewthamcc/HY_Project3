@@ -1,0 +1,218 @@
+@import 'config';
+@import 'nav';
+
+/* header styles begin */
+/* makes the header title visible */
+.header__title {
+  display: block;
+}
+
+/* makes the header bar visible */
+.header {
+  background-color: $primaryColor;
+  position: sticky;
+  top: 0;
+}
+/* header styles end */
+
+.menuNavSection {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* menu navigation styles */
+.menuLink {
+  border: none;
+  background-color: #f4f4f4;
+  color: $primaryColor;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    color: $secondColor;
+  }
+}
+
+.menuDisplay__container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menuSection__nav__menuList {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid $primaryColor;
+
+  width: 75%;
+  margin: 0 auto;
+}
+
+.menuList__item {
+  padding: 1rem 2rem;
+}
+/* menu navigation styles ends */
+
+/* menu content styles */
+.menuDisplay__gallery {
+  width: 70%;
+  margin: 0 auto;  
+
+  display: flex;
+  justify-content: center;
+}
+
+.popUpLinkContainer {
+  height: 45rem;
+  object-fit: cover;
+  object-position: center;
+  width: calc(100% / 4 - 4rem);
+  margin: 2rem;
+
+  border: 2px solid $secondColor;
+}
+
+.menuDisplay__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menuDisplay__content {
+  /* hide the contents of the menu to be displayed */
+  display: none;
+  
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.menu__title {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: $secondColor;
+  margin: 2rem
+}
+
+.menu__subTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $primaryColor;
+}
+
+.menu__name {
+  color: $primaryColor;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.--menuItem {
+  margin: 1rem 0;
+}
+
+.menu__type {
+  text-align: center;
+}
+
+// flex container styles for menus requiring two columns
+.menuContent__flexContainer {
+  display: flex;
+  justify-content: center;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menuContent__flexLeft,
+.menuContent__flexRight {
+  width: calc(50% - 4rem);
+  margin: 0 2rem;
+  padding: 0 2rem;
+}
+// flex container styles end
+
+/* dinner menu styles */
+.dinnerMenu__list {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.dinnerMenu__disclaimer {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: 4rem;
+}
+/* dinner menu styles end */
+
+/* tasting menu styles */
+.menu__cost {
+  margin: 0 1rem; 
+  font-weight: 600;
+}
+/* tasting menu styles end */
+
+
+// drink menu styles
+.drinkMenu__list {
+  margin: 2rem 0;
+  text-align: left;
+}
+/* drink menu styles end */
+
+/* wine menu styles */
+.wineMenu__list {
+  margin: 2rem 0;
+  text-align: left;
+}
+/* wine menu styles end */
+/* menu content styles end */
+
+/* responsive media queries */
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    /* no queries needed */
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .popUpLinkContainer {
+    height: 35rem;
+    width: calc(100% / 4 - 2rem);
+    margin: 1rem;  
+  }
+
+  .menuContent__flexContainer {
+    display: block;
+    width: 100%;
+  }
+
+  .menuContent__flexLeft,
+  .menuContent__flexRight {
+    width: 100%;
+    padding: 0 3rem;
+    margin: 0;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .menuList__item {
+    padding: 1rem 0.5rem;
+  }
+
+  .menuSection__nav__menuList {
+    width: 90%;
+  }
+
+  .menuDisplay__gallery {
+    width: 80%;
+  }
+
+  .popUpLinkContainer {
+    height: 30rem;
+    width: calc(100% / 4 - 1rem);
+    margin: 0.5rem;  
+  }
+}
+/* responsive media queries end */

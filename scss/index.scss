@@ -1,0 +1,349 @@
+@import 'config';
+@import 'nav';
+
+/* hero section styles */
+.heroSection {
+  background-image: url('../assets/herocolor.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+
+  color: #ffffff;
+}
+
+/* container for main content to center */
+.heroSection__flexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+/* aligns content to center of page horizontally and vertically */
+.hero__logo {
+  /* takes up remaining space */
+  flex-grow: 1;
+
+  /* to center items vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20rem;
+  letter-spacing: 2rem;
+  font-weight: 800;
+}
+
+/* arrow to jump sections */
+.header__arrowDown {
+  padding: 1.5rem;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+
+  /* nudge the arrow on hover */
+  &:hover {
+    transform: translate(0, 0.25rem);
+  }
+}
+/* hero section styles end */
+
+/* about section styles */
+.aboutSection {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.about__restaurant {
+  width: 65%;
+  margin: 2rem auto;
+  text-align: justify;
+}
+
+.about__restaurant__text {
+  margin: 2rem 0;
+}
+
+.about__team {
+  margin: 2rem 0;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.about__team__title {
+  margin: 2rem 0 1rem;
+  font-size: 1.8rem;  
+}
+
+.about__chef {
+  text-align: left;
+  display: flex;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.about__chef__image,
+.about__chef__content {
+  height: 35rem;
+  width: 50%;
+  margin: 2rem;
+  object-fit: cover;
+}
+/* about section styles end */
+
+/* dinning room image break */
+.dinningRoomImage {
+  background-image: url('../assets/diningroom1.jpg');
+  background-size: cover;
+  background-position: 0 65%;
+  background-repeat: no-repeat;
+  height: 40vh;
+} 
+/* dinning room image ends */
+
+/* reservations section styles */
+.reservationsSection {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.reservationsSection__flex {
+  display: flex;
+}
+
+/* fixing width content and images */
+.reservationsSection__content,
+.reservationsSection__image {
+  width: calc(50% - 4rem);
+  margin: 2rem;
+  object-fit: cover;
+}
+
+.reservationsSection__content {
+  text-align: left;
+  margin: 2rem auto;
+  line-height: 3rem;
+}
+
+.reservationsSection__content__text {
+  margin: 2rem 0;
+}
+/* reservations section styles end */
+
+/* contact section styles */
+.contactSection {
+  background-color: $thirdColor;
+  color: #ffffff;
+  padding: 4rem 0;
+}
+
+.contact__flexContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__map {
+  text-align: right;
+}
+
+/* fixing width of content */
+.contact__map,
+.contact__contactInfo {
+  width: calc(50% - 4rem);
+  margin: 0 2rem;
+}
+
+.contact__text {
+  margin: 2rem 0;
+  line-height: 2.5rem;
+}
+
+.chef__content__text {
+  margin: 0 0 2rem;
+}
+
+.emailForm {
+  text-align: center;
+
+  .sectionTitle {
+    margin-bottom: 2rem;
+  }
+}
+
+.emailForm__flexContainer {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+
+.emailForm__form__email {
+  text-align: center;
+  width: 30rem;
+  height: 3rem;
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  background: transparent;
+  color: #ffffff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+.emailForm__form__submit {
+  border: none;
+}
+/* contact section ends */
+
+/* food image section */
+.soasfoodImage {
+  background-image: url('../assets/trout.jpg');
+  background-size: cover;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  height: 50vh;
+
+  border-top: 5px solid $secondColor;
+  border-bottom: 5px solid $secondColor;
+} 
+/* food image section ends */
+
+/* footer styles */
+.footer {
+  padding: 0.5rem 0;
+  background-color: $primaryColor;
+  color: #ffffff;
+}
+
+.footer__flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socialMediaList {
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.footer__socialMediaList__item {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.footer__copyright {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 2rem;
+}
+/* footer styles end */
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+  /* no queries needed */
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .sectionTitle {
+    margin: 2rem 0;
+  }
+
+  .about__restaurant {
+    width: 80%;
+  }
+
+  .about__chef {
+    text-align: center;;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about__chef__image {
+    height: 30vh;
+    width: 100%;
+    margin: 2rem auto;
+    border-top: 5px solid $secondColor;
+    border-bottom: 5px solid $secondColor;
+  }
+  .about__chef__content {
+    height: auto;
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .chef__content__text {
+    text-align: justify;
+  }
+
+  .reservationsSection__flex {
+    flex-direction: column;
+  }
+
+  .reservationsSection {
+    padding-bottom: 0;
+  }
+
+  .reservationsSection__image {
+    width: 100%;
+    margin: 0 auto;
+    height: 30vh;
+    border-top: 5px solid $secondColor;
+    border-bottom: 5px solid $secondColor;
+  }
+
+  .reservationsSection__content {
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .reservationsSection__content__text {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .contact__flexContainer {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__map, 
+  .contact__contactInfo {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .contact__map {
+    text-align: center;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .hero__logo {
+    font-size: 13rem;
+    letter-spacing: 2rem;
+    font-weight: 800;
+  }
+
+  .soasfoodImage {
+    height: 25vh;
+  }
+
+  .contact__map {
+    width: 100%;
+  }
+}

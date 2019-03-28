@@ -1,0 +1,169 @@
+@import 'config';
+@import 'nav';
+
+/* header styles begin */
+/* makes the header title visible */
+.header__title {
+  display: block;
+}
+
+/* makes the header bar visible */
+.header {
+  background-color:$primaryColor;
+  position: sticky;
+  top: 0;
+}
+/* header styles end */
+
+/* events intro styles */
+.eventsSection {
+  background-image: url('../assets/diningroom2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 8rem);
+  background-attachment: fixed;
+}
+
+.events__flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  height: 100%;
+
+  padding: 3rem 3rem; 
+}
+
+.eventsSection__content {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  text-align: justify;
+
+  padding: 1rem 3rem;
+  width: 40%;
+}
+
+.eventsSection__content__text {
+  margin: 2rem 0;
+}
+
+.events__arrow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/* events intro styles end */
+
+/* event form styles */
+.eventsForm {
+  margin: 4rem;
+  text-align: center;
+}
+
+.events__input,
+.events__label,
+.events__comments {
+  display: block;
+}
+
+.eventsForm__form__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 75%;
+  margin: 3rem auto 0;
+}
+
+.event__field {
+  width: calc(50% - 4rem);
+  margin: 2rem 2rem; 
+}
+
+.events__input,
+.events__label {
+  width: 100%;
+}
+
+.events__label {
+  text-align: left;
+  font-weight: 600;
+  color: $primaryColor;
+}
+
+.events__input {
+  height: 3rem;
+  padding: 0 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid $primaryColor;
+  background-color: #f4f4f4;
+}
+
+.event__commentsField {
+  width: 75%;
+  margin: 1rem auto;
+}
+
+.events_commentsLabel {
+  color: $primaryColor;
+  font-weight: 600;
+}
+
+.events__comments {
+  width: calc(100% - 4rem);
+  margin: 1rem 2rem;
+  border :2px solid $primaryColor;
+  padding: 0.5rem;
+}
+
+.events__submitButton {
+  margin: 2rem 0;
+}
+/* events form styles end */
+
+/* responsive media queries */
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  /* no queries needed */
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  /* resizing the content overlay */
+  .eventsSection__content{
+    width: 60%;
+  }
+
+  // resizing events form width
+  .eventsForm__form__flex {
+    width: 100%;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* resizing the content overlay */
+  .eventsSection__content {
+    width: 100%;
+  }
+
+  /* removing flex from form fields and resizing widths */
+  .eventsForm__form__flex {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .event__field, 
+  .event__commentsField {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}
+/* responsive media queries end */

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>soas - events</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/events.css">
+  </head>
+
+  <body>
+
+    <!-- header section begins -->
+    <header class="header">
+      <div class="header__alignCenter">
+        <div class="header__flex">
+          <!-- header title  -->
+          <a href="index.html" class="header__titleLink">
+            <h1 class="header__title">soas</h1>
+          </a>
+
+          <!-- menu button -->
+          <button class="header__button" aria-label="menu" tabindex="1" aria-haspopup="true">
+            <div class="header__menuBtn">
+              <div class="menuBtn__line"></div>
+              <div class="menuBtn__line"></div>
+              <div class="menuBtn__line"></div>
+            </div>
+          </button>
+        </div>
+
+        <!-- main nav -->
+        <nav class="header__mainNav">
+          <ul class="mainNav__list">
+            <li class="mainNav__list__item"><a href="index.html" class="anchor__underline">home</a></li>
+            <li class="mainNav__list__item"><a href="index.html#about" class="anchor__underline">about</a></li>
+            <li class="mainNav__list__item"><a href="menu.html" class="anchor__underline">menus</a></li>
+            <li class="mainNav__list__item"><a href="index.html#reservations" class="anchor__underline">reservations</a>
+            </li>
+            <li class="mainNav__list__item"><a href="events.html" class="anchor__underline">events</a></li>
+            <li class="mainNav__list__item"><a href="index.html#contact" class="anchor__underline">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header section ends -->
+
+    <main>
+
+      <!-- events hero section -->
+      <section id="events" class="eventsSection">
+
+          <!-- flex container for items -->
+          <div class="events__flexContainer">
+            <!-- main events content as overlay on hero image -->
+            <div class="eventsSection__content">
+              <p class="eventsSection__content__text">Whether celebrating a special occasion or hosting a corporate event, soas restaurant can accommodate all of your event needs.</p>
+              <p class="eventsSection__content__text">soas' dining room can accommodate 40 - 70 guests for a seated dinner. For a stand up cocktail reception the main dining room can accommodate up to 130 guests comfortably.</p>
+              <p class="eventsSection__content__text">Our menus are custom tailored for your event with a variety of options to choose from.</p>
+            </div>
+
+            <!-- skip to main content arrow -->
+            <div class="events__arrow">
+              <a href="#eventsForm" class="events__arrowDown jumpArrow"><img src="assets/arrow.png" alt="skip to main content arrow"></i></a>
+            </div>   
+          </div>
+
+      </section>
+      <!-- events hero section ends -->
+
+      <!-- events form section -->
+      <section  id="eventsForm" class="eventsForm">
+        <div class="container">
+
+          <h2 class="sectionTitle --secondColor">private dining and events</h2>
+          <p>Please fill out our events form to tell us about your event and we will be in touch to begin planning your special occasion at soas</p>
+
+          <!--  events form -->
+          <form action="" class="eventsForm__form">
+
+            <!-- flex container for form labels -->
+            <div class="eventsForm__form__flex">
+              <div class="event__field">
+                <label for="events__firstName" class="events__label">First Name</label>
+                <input type="text" name="events__firstName" class="events__input">
+              </div>
+
+              <div class="event__field">
+                <label for="events__lastName" class="events__label">Last Name</label>
+               <input type="text" name="events__lastName" class="events__input">
+              </div>
+              
+              <div class="event__field">
+                <label for="events__email" class="events__label">Email</label>
+                <input type="email" name="events__email" class="events__input">
+              </div>
+              
+              <div class="event__field">
+                <label for="events__tel" class="events__label">Telephone Number</label>
+                <input type="tel" name="events__tel" class="events__input">
+              </div>
+              
+              <div class="event__field">
+                <label for="events__date" class="events__label">Event Date</label>
+                <input type="date" name="events__date" class="events__input">
+              </div>
+
+              <div class="event__field">
+                <label for="events__time" class="events__label">Start Time</label>
+                <input type="time" name="events__time" class="events__input">
+              </div>
+              
+              <div class="event__field">
+                <label for="events__type" class="events__label">Nature of the Event</label>
+                <input type="text" name="events__type" class="events__input">
+              </div>
+              
+              <div class="event__field">
+                <label for="events__number" class="events__label">Number of Guests</label>
+                <input type="number" name="events__number" class="events__input">
+              </div>
+            </div>
+            <!-- flex container ends -->
+
+            <div class="event__commentsField">
+              <label for="events__coments" class="events_commentsLabel">Any additional information you would like to add?</label>
+              <textarea name="events__comments" cols="30" rows="10" class="events__comments"></textarea>
+            </div>
+            
+            <input type="submit" name="events__submit" class=" events__submitButton button button--black">
+
+          </form>
+          <!--  events form ends -->
+
+        </div>
+      </section>
+      <!-- events form section ends -->
+
+    </main>
+
+    <!-- jquery and javascript import -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script src="js/navigation.js"></script>
+    
+    <!-- smooth scroll script for jump arrow -->
+    <script>
+      $(function(){
+        $('.jumpArrow').smoothScroll({
+          offset: -100
+        });
+
+        });
+
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>andrew_tham_project3 soas</title>
+
+    <!-- import fontawesome googlefonts and styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+
+  <body>
+
+    <!-- header section begins -->
+    <header class="header" id="#home">
+      <div class="header__alignCenter">
+        <div class="header__flex">
+          <!-- header title  -->
+          <a href="#home" class="header__titleLink">
+            <h1 class="header__title">soas</h1>
+          </a>
+
+          <!-- menu button -->
+          <button class="header__button" aria-label="menu" tabindex="1" aria-haspopup="true">
+            <div class="header__menuBtn">
+              <div class="menuBtn__line"></div>
+              <div class="menuBtn__line"></div>
+              <div class="menuBtn__line"></div>
+            </div>
+          </button>
+        </div>
+
+        <!-- main nav -->
+        <nav class="header__mainNav">
+          <ul class="mainNav__list">
+            <li class="mainNav__list__item"><a href="#about" class="anchor__underline">about</a></li>
+            <li class="mainNav__list__item"><a href="menu.html" class="anchor__underline">menus</a></li>
+            <li class="mainNav__list__item"><a href="#reservation" class="anchor__underline">reservations</a></li>
+            <li class="mainNav__list__item"><a href="events.html" class="anchor__underline">events</a></li>
+            <li class="mainNav__list__item"><a href="#contact" class="anchor__underline">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- main section begins -->
+    <main>
+
+      <!-- hero image section -->
+      <section id="home" class="heroSection">
+
+        <!-- flex container for hero logo -->
+        <div class="heroSection__flexContainer">
+          <p class="hero__logo --fontLogo">soas</p>
+
+          <a href="#about" class="header__arrowDown jumpArrow"><img src="assets/arrow.png" alt="skip to main content arrow"></i></a>
+        </div>
+        <!-- flex container for hero logo ends -->
+
+      </section>
+      <!-- hero image section ends -->
+
+      <!-- about section -->
+      <section id="about" class="aboutSection">
+        <div class="container">
+
+          <div class="about__restaurant">
+            <p class="about__restaurant__text">soas restaurant located in downtown Toronto serves contemporary cuisine
+              focused on seasonal, interesting, and
+              local ingredients. The food and menu are evolved according to what's available and as a reflection of our
+              enviornment and people surrounding around us.</p>
+
+            <p class="about__restaurant__text">We offer an a la carte dinner menu featuring quality ingredients as well as
+              a tasting menu with
+              bites and flavours not offered or featured on the a la carte menu. For private dining and events please
+              contact our <a href="events.html" class="--linkDark">events team</a>.</p>
+          </div>
+
+          <div class="about__team">
+            <h3 class="--secondColor about__team__title">kitchen</h3>
+            <p>
+              Chef: Andrew Wu
+              <br>Sous Chef: Samantha Adler
+              <br>Pastry Chef: Michaela James
+            </p>
+
+            <h3 class="--secondColor about__team__title">dining room</h3>
+            <p>
+              General Manager: Amos Cambell
+              <br>Sommelier: Jimmy Leung
+            </p>
+          </div>
+
+          <!-- flex container for about chef -->
+          <div class="about__chef">
+            <img src="assets/snowcrab2.jpg" alt="picture of snow crab dish at soas" class="about__chef__image">
+
+            <div class="about__chef__content">
+              <p class="chef__content__text">Toronto born Chef Andrew Wu has cooked and trained in Toronto, Singapore, and
+                Melbourne. Notable restaurants including The Harbord Room, Colborne Lane, The Tippling Club in Singapore,
+                and Estelle in Melbourne.</p>
+
+              <p class="chef__content__text">soas (son of a shoemaker) is his first restaurant, its namesake inspired from
+                Andrew's father and a tongue in cheek nod to the colloquial use of of the term, shoemaker, in restaurants
+                around the world.</p>
+
+              <p class="chef__content__def">shoemaker - noun/<strong>colloquialism</strong></p>
+              <p class="chef__content__def">A cook or chef that does not put effort into their work. Often thought of as
+                lazy, incompetent, lacking in skill or workmanship.</p>
+            </div>
+          </div>
+          <!-- flex container for about chef ends -->
+
+        </div>
+      </section>
+      <!-- about section ends -->
+
+      <!-- dining room image section -->
+      <section id="restaurantImage" class="dinningRoomImage"></section>
+      <!-- dining room image section ends -->
+
+      <!-- reservations section -->
+      <section id="reservations" class="reservationsSection">
+        <div class="container">
+          <h2 class="sectionTitle --secondColor">reservations</h2>
+
+          <!-- flex container for reservation items -->
+          <div class="reservationsSection__flex">
+            <div class="reservationsSection__content">
+              <a href="http://www.opentable.com/" target="_blank" class="button button--black">book a table</a>
+              <p class="reservationsSection__content__text">Reservations are recommended. We accommodate dinner
+                reservations with two seating times: 5:30PM and 8:30PM.
+                Tables will be held for 15 minutes after your reservation time. For parties of 6 or more please contact us
+                at:
+                <a href="#" class="--linkDark">tables@saostoronto.com</a></p>
+
+              <p class="reservationsSection__content__text">Need a table tonight? Please check <a
+                  href="http://www.getdinr.com" target="_blank" class="--linkDark">DINR</a></p>
+
+              <a href="events.html" class="--linkDark">private dining & events</a>
+            </div>
+
+            <img src="assets/gnocchi.jpeg" alt="popcorn gnocchi dish" class="reservationsSection__image">
+          </div>
+          <!-- flex container for reservation items ends -->
+
+        </div>
+      </section>
+      <!-- reservation section ends -->
+
+      <!-- contact section -->
+      <section id="contact" class="contactSection">
+        <div class="container">
+
+          <!-- flex container for contact items -->
+          <div class="contact__flexContainer">
+            <div class="contact__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.994932218147!2d-79.40001288442537!3d43.64827377912152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34dc87fa67bd%3A0xe05376a9e49647e1!2s483+Queen+St+W%2C+Toronto%2C+ON+M5V+2A9!5e0!3m2!1sen!2sca!4v1550279492069"
+                width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="contact__contactInfo">
+              <h2 class="--logoFont">soas</h2>
+              <p class="contact__text">
+                483 Queen Street West
+                <br>Toronto, Ontario
+                <br>416 789 0123
+                <br><a href="#" class="--linkLight">info@soastoronto.com</a>
+              </p>
+
+              <p class="contact__text">
+                Tuesday - Saturday
+                <br>5:30 PM -11:00 PM
+                <br>Dinner service only
+              </p>
+
+              <p class="contact__text">
+                We are always looking for interesting people to join our team. For employment inquiries please contact us
+                at: <a href="#" class="--linkLight">jobs@soastronto.com</a>
+              </p>
+            </div>
+          </div>
+          <!-- flex container for contact items  ends-->
+
+          <div class="emailForm">
+            <h2 class="sectionTitle --secondColor">newsletter</h2>
+            <p>Subscribe below for our newsletter featuring updates and announcements.</p>
+
+            <form action="" class="emailForm__form emailForm__flexContainer">
+              <label for="form__email" class="visuallyhidden">email</label>
+              <input type="email" name="form__email" placeholder="email" required class="emailForm__form__email">
+              <input type="submit" class="emailForm__form__submit button button--yellow">
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- contact section ends -->
+      
+    </main>
+    <!-- main sesction ends -->
+
+    <!-- food image section -->
+    <section id="foodImage" class="soasfoodImage"></section>
+    <!-- food image section ends -->
+
+    <!-- footer section begins -->
+    <footer class="footer">
+      <div class="container">
+
+        <!-- flex container for footer items -->
+        <div class="footer__flexContainer">
+          <p class="footer__copyright">&copy; 2019 SOAS made by CCAT</p>
+
+          <ul class="footer__socialMediaList">
+            <li class="footer__socialMediaList__item"><a href="http://www.facebook.com" target="_blank"  class="--linkLight" aria-label="go to Facebook"><i aria-hidden class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="footer__socialMediaList__item"><a href="http://www.twitter.com" target="_blank"  class="--linkLight" aria-label="go to Twitter"><i aria-hidden class="fab fa-twitter"></i></a></li>
+            <li class="footer__socialMediaList__item"><a href="http://www.instagram.com" target="_blank"  class="--linkLight" aria-label="go to Instagram"><i aria-hidden class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!-- flex container for footer items -->
+
+      </div>
+    </footer>
+    <!-- footer section ends -->
+
+    <!-- jquery and javascript import -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <!-- images of Agern restaurant copyright Nick Solares used with permission of photographer -->
+  </body>
+
+</html>
